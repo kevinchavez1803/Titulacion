@@ -1,0 +1,97 @@
+
+body {
+background-image: url("IMG/fondo.jpg");
+}
+
+/* Estilo para el contenedor del formulario */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Botón de redirección al Dashboard */
+.btn-dashboard {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.btn-dashboard:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo de la caja del formulario */
+.form-box {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilos de los campos de entrada */
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+/* Estilo del botón de envío */
+button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Estilo de los campos de selección */
+select.form-control {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Respuesta en pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .form-box {
+        padding: 20px;
+    }
+
+    .form-control, button[type="submit"], select.form-control {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}

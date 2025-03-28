@@ -1,0 +1,88 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor del formulario de login */
+.login-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 300px;
+    text-align: center;
+}
+
+/* Botón de regresar */
+.btn-back {
+    text-decoration: none;
+    background-color: #ca4026; /* Rojo vibrante */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-back:hover {
+    background-color: #ca4026; /* Rojo más oscuro en hover */
+}
+
+/* Estilos del título */
+h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilos del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input[type="text"],
+form input[type="password"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+form input[type="text"]:focus,
+form input[type="password"]:focus {
+    border-color: #f04e30;
+}
+
+form input[type="submit"] {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f04e30;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #c03b24;
+}
+
+/* Estilo del mensaje de error */
+.error-message {
+    color: #f04e30;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
