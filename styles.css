@@ -1,0 +1,200 @@
+/* General body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btn-logout {
+    text-decoration: none;
+    background-color: #f04e30; /* Rojo vibrante */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    position: fixed;
+    top: 20px;
+    right: 20px; /* Mueve el botón a la derecha */
+    transition: background-color 0.3s ease;
+}
+
+.btn-logout:hover {
+    background-color: #c03b24; /* Rojo más oscuro en hover */
+}
+
+/* Header */
+.header {
+    background-color: #2c3e50; /* Azul oscuro */
+    color: white;
+    padding: 20px 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #16a085; /* Verde gimnasio */
+}
+
+.logout {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.logout li a {
+    color: white;
+    background-color: #e74c3c; /* Rojo de advertencia */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.logout li a:hover {
+    background-color: #c0392b;
+}
+
+/* Main Section */
+main {
+    margin-top: 100px; /* Para evitar que el contenido quede tapado por el header fijo */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Message Section */
+.message-section .mensaje {
+    background-color: #f39c12; /* Color cálido */
+    color: white;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* User Table */
+.user-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    border-radius: 8px;
+}
+
+.user-table th, .user-table td {
+    padding: 15px;
+    text-align: left;
+}
+
+.user-table th {
+    background-color: #2c3e50;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.user-table td {
+    background-color: #ecf0f1;
+}
+
+.user-table td input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.user-table td button, .user-table td a {
+    padding: 8px 15px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.user-table td button {
+    background-color: #27ae60; /* Verde gimnasio */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.user-table td button:hover {
+    background-color: #2ecc71;
+}
+
+.user-table td a {
+    background-color: #e74c3c; /* Rojo */
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.user-table td a:hover {
+    background-color: #c0392b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .user-table {
+        padding: 10px;
+    }
+}

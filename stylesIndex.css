@@ -1,0 +1,132 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right, #8a2b14, #f37c20); /* Gradiente de colores cálidos */
+}
+
+.btn-logout {
+    text-decoration: none;
+    background-color: #f04e30; /* Rojo vibrante */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    position: fixed;
+    top: 20px;
+    right: 20px; /* Mueve el botón a la derecha */
+    transition: background-color 0.3s ease;
+}
+
+.btn-logout:hover {
+    background-color: #c03b24; /* Rojo más oscuro en hover */
+}
+
+
+/* Estilos del header */
+header {
+    background: #222;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 24px;
+}
+
+.login-link {
+    text-decoration: none;
+    color: #fff;
+    background: #f04e30;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.login-link:hover {
+    background: #c03b24;
+}
+
+/* Estilos del carrusel */
+.carrusel {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1000px;
+}
+
+.slider img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Sección de información */
+.info {
+    text-align: center;
+    padding: 40px 20px;
+    background: #f4f4f4;
+}
+
+.info h2 {
+    font-size: 28px;
+    color: #333;
+}
+
+.info p {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Mapa */
+.mapa {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.mapa h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#map {
+    width: 80%;
+    height: 300px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .login-link {
+        margin-top: 10px;
+    }
+
+    .carrusel {
+        width: 100%;
+    }
+
+    #map {
+        width: 100%;
+    }
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymApp</title>
+    <link rel="stylesheet" href="CSS/stylesIndex.css">
+
+    <!-- jQuery y Slick Carousel -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
+
+    <!-- FontAwesome para los iconos -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+        <h1>ForFit GYM</h1>
+        <li><a href="login.jsp" class="btn-logout">Iniciar Sesión</a></li>
+    </div>
+</header>
+
+<!-- Sección del carrusel -->
+<section class="carrusel" style="background-color: #000" style="border-radius: 15px;">
+    <div class="slider">
+        <div>
+            <img src="IMG/img1.jpg" alt="Plan Básico" style="width: 300px; height: 400px; display: block; margin: auto;">
+        </div>
+        <div>
+            <img src="IMG/img.2.jpg" alt="Plan Intermedio" style="width: 300px; height: 400px; display: block; margin: auto;">
+        </div>
+        <div>
+            <img src="IMG/img3.jpg" alt="Plan Premium" style="width: 300px; height: 400px; display: block; margin: auto;">
+        </div>
+    </div>
+</section>
+
+<section class="info" style="border-radius: 10px;">
+    <h2>¿Por qué elegir ForFit GYM?</h2>
+    <p>Te ofrecemos los mejores equipos, entrenadores certificados y un ambiente motivador para que logres tus metas.</p>
+</section>
+
+<!-- Sección de Mapa y Redes Sociales -->
+<section class="mapa">
+    <h2>Encuéntranos aquí</h2>
+    <div class="container">
+        <!-- Mapa -->
+        <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994.3441470414824!2d-78.4998923!3d-0.1904671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59b07c0d79fa5%3A0xdde06a0c893c8e8f!2sFORTFIT%20GYM!5e0!3m2!1ses-419!2sec!4v1711551234567"
+                width="600"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+        <!-- Redes Sociales -->
+        <div class="social-links">
+            <a href="https://www.instagram.com/tu_perfil" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/tu_perfil" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://wa.me/tu_numero" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<script>
+    $(document).ready(function(){
+        $('.slider').slick({
+            autoplay: true,
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1
+        });
+    });
+</script>
+
+<li>
+    <a href="https://www.facebook.com/FortFit.gym/?locale=es_LA" target="_blank" rel="noopener noreferrer">
+        <img src="https://www.wpromotions.eu/wp-content/uploads/2019/01/facebook-wpromotions.png" alt="Facebook">
+    </a>
+</li>
+<li>
+    <a href="https://www.instagram.com/fortfit.gym/?hl=es-la" target="_blank" rel="noopener noreferrer">
+        <img src="https://www.wpromotions.eu/wp-content/uploads/2019/01/instagram-wpromotions.png" alt="Instagram">
+    </a>
+</li>
+
+</body>
+</html>
